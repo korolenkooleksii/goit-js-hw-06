@@ -56,6 +56,8 @@ function onBorderBlur(event) {
   const symbols = event.currentTarget.value.trim();
 
   input.classList.add("invalid");
+  input.classList.remove("valid");
+
 
   if (symbols.length === Number(event.currentTarget.dataset.length)) {
     input.classList.replace("invalid", "valid");
